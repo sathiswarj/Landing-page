@@ -1,0 +1,157 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: black; 
+    position: relative; 
+    z-index: 1000;  
+
+}
+
+.navbar-title {
+    margin: 0;
+}
+
+.hamburger {
+    display: none;  
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+}
+
+
+ 
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 45px;
+}
+.nav-links {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+ 
+  
+ 
+  .nav-item {
+    position: relative;
+  }
+  
+  .courses-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .courses-nav.show {
+    display: block;
+    padding: 10px 10px;
+  }
+  
+  .courses-nav .nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-item.active .courses-nav {
+    display: block;
+  }
+  
+  .nav-item:hover .courses-nav {
+    display: block;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .courses-nav {
+      display: none;
+    }
+  
+    .courses-nav.show {
+      display: block;
+    }
+    .nav-item {
+        position: relative;
+      }
+      
+      .courses-nav {
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  }
+  
+ 
+   
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+    
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+                margin: 0;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+    }
+
+    .nav.show {
+        display: flex; 
+         
+    }
+    .hamburger {
+        margin-right: 26px;
+        font-size: 26px;
+        margin-top: 4px;
+    }
+    .nav-links {
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+    .develop{
+        display: none;
+    }
+    .courses-dropdown {
+        display: block;
+      }
+      
+    }
+ 

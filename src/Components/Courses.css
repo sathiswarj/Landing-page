@@ -1,0 +1,32 @@
+.courses-nav {
+    display: none; /* Hide by default */
+    /* Add other styling here */
+  }
+  
+  .courses-nav.show  {
+    display: block; /* Show when .show class is added */
+    /* Add other styling here */
+  }
+  
+  .main-nav-item {
+    position: relative;
+    /* Add other styling here */
+  }
+  
+  .main-nav-item .nav-title {
+    cursor: pointer;
+    /* Add other styling here */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    /* Add other styling here */
+  }
+  

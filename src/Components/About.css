@@ -1,0 +1,20 @@
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+  .container {
+    padding: 0 15px;
+  }
+  p {
+    margin: 0 0 10px;
+    line-height: 34px;
+    font-size: 18px;
+}  
+.read {
+    background: #186ec4;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
